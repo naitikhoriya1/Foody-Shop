@@ -1,0 +1,37 @@
+/* src/Styles/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* background-image: url(../assets/hero.jpeg); */
+  margin: 0;
+}
+
+.Navbar-leftside h1 {
+  font-size: 3em; /* Increase font size */
+  font-weight: bolder; /* Make it bold */
+  color: #d06915; /* Change color to a prominent one */
+}
+
+.btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  /* border: 1px solid transparent; */
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn-design {
+  background-color: #f8f9fa;
+  color: #000;
+  /* border-color: #f8f9fa; */
+}
+
+.btn-design:hover {
+  background-color: #b0c9e3;
+  color: #868383;
+  /* border-color: #dae0e5; */
+}
