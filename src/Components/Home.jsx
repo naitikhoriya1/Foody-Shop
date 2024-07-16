@@ -11,6 +11,10 @@ function Home() {
             Order Now
           </button>
         </div>
+        {/* <div className="about">
+          <h1 className="about-image">About Us</h1>
+          <h1 className="about-text">About Us</h1>
+        </div> */}
       </div>
     </>
   );
