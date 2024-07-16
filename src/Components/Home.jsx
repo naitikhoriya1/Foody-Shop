@@ -4,9 +4,12 @@ function Home() {
     <>
       <div className="home">
         <div className="hero">
-          <h1>
-            Natural Food Is <br /> Always Healthy
+          <h1 className="hero-text">
+            Natural Food is <br /> Always Healthy
           </h1>
+          <button className="button-17" role="button">
+            Order Now
+          </button>
         </div>
       </div>
     </>
