@@ -23,7 +23,7 @@ function Navbar() {
           <a href="/Login" className="btn btn-link btn-color">
             Login
           </a>
-          <a href="signup" className="btn btn-link btn-color">
+          <a href="Signin" className="btn btn-link btn-color">
             Signup
           </a>
         </div>

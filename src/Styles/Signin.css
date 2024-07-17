@@ -4,56 +4,54 @@
   font-weight: bold;
 }
 
-.login-container {
+.sign-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-image: url("../assets/hero.jpeg");
   background-image: cover;
+  border-radius: 10px;
 }
 
-.login-image {
+.sign-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
+  background-image: url("../assets//asset2.jpeg");
 }
 
-.login-image img {
-  /* max-width: 100%; */
+.sign-image img {
+  max-width: 100%;
   height: 33rem;
   border-radius: 10px;
 }
 
-.login-form {
-  flex: 1;
-  /* background-color: #fff; */
-  background-image: url("../assets/background.jpeg");
+.sign-form {
   padding: 50px;
-  border-radius: 0 10px 10px 0;
+  /* border-radius: 0 10px 10px 0; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   height: 33rem;
 }
 
-.login-form h1 {
+.sign-form h1 {
   margin-bottom: 10px;
-  font-size: 3.2em;
+  font-size: 2.2em;
   font-weight: bolder;
   color: #333;
 }
 
-.login-form p {
-  font-size: large;
+.sign-form p {
+  font-size: medium;
   font-weight: 600;
   margin-bottom: 20px;
   color: #666;
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .input-group label {
@@ -64,7 +62,7 @@
 
 .input-group input {
   width: 100%;
-  padding: 8px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 20px;
 }
