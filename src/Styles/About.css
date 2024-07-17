@@ -1,11 +1,10 @@
 .about {
-  background-image: url("../assets/background.jpeg");
-  /* border: 2px solid green; */
   margin-top: 5rem;
   height: 44rem;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  background-color: #f5f5f5cd;
 }
 
 .about-image > img {
@@ -31,7 +30,9 @@
   margin-top: 1rem;
 }
 .about-text > button {
-  padding-right: 5rem;
-  padding: 1rem;
-  color: #d06915;
+  height: 3rem;
+  width: 8rem;
+  border-radius: 1.5rem;
+  background-color: #4c8077;
+  color: white;
 }

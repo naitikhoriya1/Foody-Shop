@@ -1,5 +1,6 @@
 import("../Styles/About.css");
 import farmerpic from "../assets/asset2.jpeg";
+import Features from "./Features.jsx";
 function About() {
   return (
     <>
@@ -23,9 +24,10 @@ function About() {
             <li>Let food be thy medicine and medicine be thy food.</li>
             <li>There are no gardening mistakes, only experiments.</li>
           </ul>
-          <button className="button-17 ">Read More</button>
+          <button>Read More</button>
         </div>
       </div>
+      <Features />
     </>
   );
 }
