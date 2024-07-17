@@ -1,4 +1,5 @@
 import "../Styles/Navbar.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
@@ -7,22 +8,22 @@ function Navbar() {
           <h1>Foody🍔</h1>
         </div>
         <div className="Navbar-leftside">
-          <a href="#home" className="btn btn-link btn-color">
+          <a href="/" className="btn btn-link btn-color">
             Home
           </a>
-          <a href="#products" className="btn btn-link btn-color">
+          <a href="products" className="btn btn-link btn-color">
             Products
           </a>
-          <a href="#about" className="btn btn-link btn-color">
+          <a href="about" className="btn btn-link btn-color">
             About
           </a>
-          <a href="#contact" className="btn btn-link btn-color">
+          <a href="contact" className="btn btn-link btn-color">
             Contact us
           </a>
-          <a href="#login" className="btn btn-link btn-color">
+          <a href="/Login" className="btn btn-link btn-color">
             Login
           </a>
-          <a href="#signup" className="btn btn-link btn-color">
+          <a href="signup" className="btn btn-link btn-color">
             Signup
           </a>
         </div>
