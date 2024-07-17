@@ -1,0 +1,37 @@
+.about {
+  background-image: url("../assets/background.jpeg");
+  /* border: 2px solid green; */
+  margin-top: 5rem;
+  height: 44rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.about-image > img {
+  margin-left: 50px;
+  /* height: 100px; */
+  width: 36rem;
+}
+.about-text {
+  margin: 3rem;
+  font-family: Georgia, Times, "Times New Roman";
+}
+.about-text > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  /* margin-top: 2rem; */
+}
+.about-text > p {
+  font-size: 1.1rem;
+}
+
+.about-text > ul > li {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+.about-text > button {
+  padding-right: 5rem;
+  padding: 1rem;
+  color: #d06915;
+}
