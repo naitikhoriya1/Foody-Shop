@@ -23,4 +23,4 @@ This project showcases modern web development techniques using React, CSS, and J
 
 1. Clone the repository:
    ```bash
-  [ git clone https://github.com/yourusername/foody-website.git](https://github.com/naitikhoriya1/Foody-Shop.git)
+https://github.com/naitikhoriya1/Foody-Shop.git
