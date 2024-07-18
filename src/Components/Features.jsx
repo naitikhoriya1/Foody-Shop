@@ -1,8 +1,11 @@
 import "../Styles/Features.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
 import feature1 from "../assets/feature1.png";
 import feature2 from "../assets/feature2.png";
 import feature3 from "../assets/feature3.png";
 function Features() {
+  AOS.init({ duration: 1000 });
   return (
     <>
       <div className="features-page">
@@ -15,7 +18,7 @@ function Features() {
             </p>
           </div>
         </div>
-        <div className="features-cards">
+        <div data-aos="zoom-in-up" className="features-cards">
           <div className="features-card-1">
             <img src={feature1} alt="feature1" />
             <h2>Natural Process</h2>

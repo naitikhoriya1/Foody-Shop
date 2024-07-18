@@ -11,7 +11,7 @@ function About() {
         <div className="about-text">
           <h1>
             Best Organic Fruits And <br />
-            Vegetables
+            Juices
           </h1>
           <p>
             The first supermarket supposedly appeared on the American landscape
@@ -20,8 +20,8 @@ function About() {
             forests. - Joel Salatin
           </p>
           <ul>
-            <li>I love fresh vegetables. I like fresh everything.</li>
-            <li>Let food be thy medicine and medicine be thy food.</li>
+            <li>I love fresh fruit Juices. I like fresh everything.</li>
+            <li>Let food be thy medicine and medicine be thy fruit.</li>
             <li>There are no gardening mistakes, only experiments.</li>
           </ul>
           <button>Read More</button>

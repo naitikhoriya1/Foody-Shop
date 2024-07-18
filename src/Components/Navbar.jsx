@@ -4,7 +4,7 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="Navbar-leftside">
-          <h1>Foody🍔</h1>
+          <h1>FoodY 🥂</h1>
         </div>
         <div className="Navbar-leftside">
           <a href="/" className="btn btn-link btn-color">
