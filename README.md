@@ -19,8 +19,3 @@ This project showcases modern web development techniques using React, CSS, and J
 - A modern web browser (Chrome, Firefox, Safari)
 - Basic understanding of React, CSS, and JavaScript
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-https://github.com/naitikhoriya1/Foody-Shop.git
