@@ -1,8 +1,26 @@
-# React + Vite
+# Foody Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Foody is a  web application designed to help users explore and discover delicious recipes and food-related content.
+This project showcases modern web development techniques using React, CSS, and JavaScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design Techniques (Flexbox/Grid)
+
+## Getting Started
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Safari)
+- Basic understanding of React, CSS, and JavaScript
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+  [ git clone https://github.com/yourusername/foody-website.git](https://github.com/naitikhoriya1/Foody-Shop.git)
