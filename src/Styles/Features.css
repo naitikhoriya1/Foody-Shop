@@ -47,3 +47,45 @@
   background-color: #4c8077;
   color: white;
 }
+
+.whychooseus {
+  margin-top: 10rem;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #d06915dd,
+    #cc7a25,
+    #c98936,
+    #c6974a,
+    #c4a35e
+  );
+  height: 22rem;
+}
+.whychooseus h2 {
+  font-size: 2rem;
+  padding-left: 1.4rem;
+}
+.whychooseus h1 {
+  padding: 3rem 0rem 0rem 28rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.whychooseus .whychoose-us {
+  padding: 0rem 0rem 0rem 17rem;
+}
+.whychooseus-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.whychooseus-cards .one-customer {
+  margin: 0 1rem;
+  font-size: large;
+  font-weight: 900;
+}
+.one-customer {
+  font-weight: bold;
+  font-size: larger;
+}

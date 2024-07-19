@@ -47,6 +47,31 @@ function Features() {
             <button>Read more</button>
           </div>
         </div>
+        <div className="whychooseus">
+          <h1>Why Choose Us 🙄?</h1>
+          <p className="whychoose-us">
+            Our platforms come equipped with all the essential features you need
+            for a successful delivery service:
+          </p>
+          <div className="whychooseus-cards">
+            <div className="one-customer">
+              <h2>99%</h2>
+              <p>Successful delivary</p>
+            </div>
+            <div className="one-customer">
+              <h2>10000+</h2>
+              <p>Happy Customers</p>
+            </div>
+            <div className="one-customer">
+              <h2>100+</h2>
+              <p>Delivary Agents</p>
+            </div>
+            <div className="one-customer">
+              <h2>140+</h2>
+              <p>Daily Visitors</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
