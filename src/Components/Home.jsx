@@ -1,5 +1,7 @@
 import "../Styles/Home.css";
 import About from "./About.jsx";
+import Tester from "./Tester.jsx";
+
 function Home() {
   return (
     <>
@@ -14,6 +16,7 @@ function Home() {
         </div>
       </div>
       <About />
+      <Tester />
     </>
   );
 }

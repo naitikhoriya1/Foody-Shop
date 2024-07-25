@@ -9,9 +9,10 @@
 }
 
 .Navbar-leftside h1 {
-  font-size: 3em;
+  font-size: 1.1rem;
   font-weight: bolder;
   color: #d06915;
+  letter-spacing: 5px;
 }
 
 .btn {

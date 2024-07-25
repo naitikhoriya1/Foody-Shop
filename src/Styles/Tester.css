@@ -1,0 +1,44 @@
+.tester {
+  margin-top: 10rem;
+  background-color: aliceblue;
+  height: 70vh;
+  width: 100%;
+}
+
+.tester > h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #d06915;
+  font-weight: 600;
+}
+.tester h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #3c3b3bd6;
+}
+.tester-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-card {
+  margin: 10px;
+  background-color: white;
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.tester-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tester-profile img {
+  height: 100px;
+  border-radius: 30%;
+  margin: 4px;
+}
