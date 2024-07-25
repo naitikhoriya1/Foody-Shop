@@ -1,0 +1,16 @@
+.footer {
+  height: 70vh;
+  color: white;
+  margin-top: 10rem;
+  background-color: #4c8077;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.footer-top h2 {
+  padding-right: 30px;
+}
