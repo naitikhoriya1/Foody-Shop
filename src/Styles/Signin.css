@@ -83,8 +83,23 @@
 .sign-in-button:hover {
   background-color: #0056b3;
 }
+.google-button {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.google-button__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
 
 .create-account-button {
+  margin-top: auto;
   width: 70%;
   padding: 0 10px 0 10px;
   margin-left: 8px;

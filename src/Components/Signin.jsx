@@ -1,8 +1,20 @@
-import React,{useState} from "react";
+import { useState } from "react";
 import "../Styles/Signin.css";
 import signImage from "../assets/asset2.jpeg";
-function Signin() {
+import GoogleButton from "react-google-button";
+import { Navigate } from "react-router-dom";
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAtjEDfeP0OXkmX2Ofyvssnno2ZBcusIrA",
+  authDomain: "food-1ec3f.firebaseapp.com",
+  projectId: "food-1ec3f",
+  storageBucket: "food-1ec3f.appspot.com",
+  messagingSenderId: "382920070563",
+  appId: "1:382920070563:web:09bf43bd43cd7358547616",
+};
+function Signin() {
   let [formData, setFormData] = useState({});
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -10,6 +22,21 @@ function Signin() {
       ...previousData,
       [name]: value,
     }));
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  const handleSignInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      console.log(result);
+      Navigate("/");
+      // ...
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -23,28 +50,28 @@ function Signin() {
       },
       body: JSON.stringify(formData),
     });
-  
+
     const jsonData = await response.json();
-    alert(jsonData.message)
+    alert(jsonData.message);
   };
+
   return (
     <>
       <div className="sign-container">
         <div className="sign-form">
           <h1>Thank You 👋</h1>
           <p>Unlock your world.</p>
-          <form action="#"
-            method="POST"
-            onSubmit={handleSubmit}>
+          <form action="#" method="POST" onSubmit={handleSubmit}>
             <div className="input-group">
               <label htmlFor="email">Email</label>
-              <input 
-              type="email" 
-              id="email" 
-              name="email"
-              value={formData.email}
-                  onChange={handleChange}
-              placeholder="Enter your email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Enter your email"
+              />
             </div>
             <div className="input-group">
               <label htmlFor="username">Username</label>
@@ -53,7 +80,7 @@ function Signin() {
                 id="Username"
                 name="username"
                 value={formData.username}
-                  onChange={handleChange}
+                onChange={handleChange}
                 placeholder="Enter your Username"
               />
             </div>
@@ -64,7 +91,7 @@ function Signin() {
                 id="Location"
                 name="location"
                 value={formData.location}
-                  onChange={handleChange}
+                onChange={handleChange}
                 placeholder="Enter your Location"
               />
             </div>
@@ -75,7 +102,7 @@ function Signin() {
                 id="password"
                 name="password"
                 value={formData.password}
-                  onChange={handleChange}
+                onChange={handleChange}
                 placeholder="Enter your password"
               />
             </div>
@@ -83,9 +110,8 @@ function Signin() {
               <button type="submit" className="sign-in-button">
                 Sign In
               </button>
-              <button type="button" className="create-account-button">
-                Have A Account
-              </button>
+
+              <GoogleButton onClick={handleSignInWithGoogle} />
             </div>
           </form>
         </div>
@@ -96,6 +122,5 @@ function Signin() {
     </>
   );
 }
-
 
 export default Signin;
