@@ -20,12 +20,13 @@
 }
 .email-input-div {
   padding: 2px 0px;
-  height: 5px;
+  height: 6px;
   width: 400px;
 }
 .email-input-div input {
+  padding-left: 15px;
   width: 100%;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 .subscribe-button {
   height: 40px;

@@ -20,6 +20,19 @@
   padding-left: 12rem;
   cursor: pointer;
 }
+.products-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 .animation {
   margin: 2rem;
   padding: 10px;
