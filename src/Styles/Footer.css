@@ -91,3 +91,34 @@ a:hover {
   font-size: small;
   line-height: 15px;
 }
+.copyright{
+  height: 10px;
+  display: flex;
+  font-size: smaller;
+  color: rgb(137, 135, 135);
+}
+.copyright-div{
+  padding-left:10px;
+}
+.follow-page{
+  padding-left: 900px;
+  display: flex;
+}
+.social-icons{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 8px;
+  align-items: center;
+}
+.social-icons i{
+  padding-left: 8px;
+}
+#facebook:hover{
+  color:rgb(41, 117, 247)
+}
+#instagram:hover{
+color:rgb(247, 46, 76);
+}
+#twitter:hover{
+  color: rgb(2, 2, 205);
+}
