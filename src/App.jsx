@@ -7,6 +7,7 @@ import Signin from "./Components/Signin";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Products from "./Components/Products";
+import AddCard from "./Components/AddCard";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Products" element={<Products />} />
+          <Route path="/AddCard" element={<AddCard />} />
         </Routes>
       </BrowserRouter>
     </>

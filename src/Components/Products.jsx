@@ -3,11 +3,14 @@ import AOS from "aos";
 import "../Styles/Products.css";
 import { useState, useEffect } from "react";
 import Footer from "./Footer.jsx";
+import AddCart from "./AddCard.jsx";
 
 function Products() {
   AOS.init({});
 
   const [data, setData] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3000/products")
@@ -15,6 +18,10 @@ function Products() {
       .then((data) => setData(data.data))
       .catch((error) => console.error(error));
   }, []);
+  const addToCart = (product) => {
+    setCartItems((prevCartItems) => [...prevCartItems, product]);
+    setIsCartOpen(true); // Open the cart sidebar when an item is added
+  };
 
   return (
     <>
@@ -22,12 +29,15 @@ function Products() {
         <div className="products-header">
           <h1> Our Products 🍓</h1>
           <h3>Home / Products page</h3>
+          {/* <AddCart /> */}
         </div>
+
         <div className="products-grid">
           {data.map((product) => (
             <div key={product._id} data-aos="zoom-in-up" className="animation">
               <div className="products-image">
                 <img
+                  className="products-image-img"
                   width={"300px"}
                   height={"200px"}
                   src={product.image_url}
@@ -54,6 +64,11 @@ function Products() {
           ))}
         </div>
       </div>
+      {/* <AddCart
+        cartItems={cartItems}
+        isOpen={isCartOpen}
+        toggleCart={() => setIsCartOpen(!isCartOpen)}
+      /> */}
       <Footer />
     </>
   );
