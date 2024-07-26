@@ -25,6 +25,7 @@ function Navbar() {
           <a href="Signin" className="btn btn-link btn-color">
             Signup
           </a>
+        
         </div>
       </div>
     </>

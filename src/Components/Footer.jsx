@@ -55,8 +55,23 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="line-div"></div>
       </div>
+        <div className="line-div"></div>
+       <div className="copyright">
+      
+          <div className="copyright-div">
+          <p>&copy; copyright, 2024</p>
+          </div>
+          <div className="follow-page">
+            <p>Follow us </p>
+            <div className="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" id="facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" id="instagram"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a>
+            </div>
+          </div>
+    
+       </div>
     </>
   );
 }
