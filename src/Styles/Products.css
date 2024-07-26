@@ -36,7 +36,7 @@
 .animation {
   margin: 2rem;
   padding: 10px;
-  height: 24rem;
+  height: 26rem;
   width: 20rem;
   background-color: #4c807721;
   border-radius: 15px;
@@ -81,6 +81,7 @@
 .product-btn {
   padding: 0%;
   margin: 0%;
+  /* margin: -10% 10px; */
 }
 button {
   border-radius: 8px;
@@ -100,4 +101,8 @@ button {
   padding: 0%;
   margin: 0%;
   line-height: 15px;
+}
+.heart {
+  background-color: transparent;
+  font-size: larger;
 }

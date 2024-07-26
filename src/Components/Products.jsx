@@ -47,14 +47,18 @@ function Products() {
               <div className="about-products">
                 <div className="product-name">
                   <h5>{product.name}</h5>
-                  <p><b>Price: {product.price}</b></p>
+                  <p>
+                    <b>Price: {product.price}</b>
+                  </p>
                 </div>
                 <div className="product-description">
                   <p>{product.description}</p>
                 </div>
                 <div className="product-btn">
-                  <button>BUY</button>
-                  <button onClick={() => addToCart(product)}>Add to Cart</button>
+                  <button className="heart">❤️</button>
+                  <button onClick={() => addToCart(product)}>
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
