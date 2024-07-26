@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../Styles/Signin.css";
 import signImage from "../assets/asset2.jpeg";
 import GoogleButton from "react-google-button";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
@@ -15,6 +15,7 @@ const firebaseConfig = {
   appId: "1:382920070563:web:09bf43bd43cd7358547616",
 };
 function Signin() {
+  const Navigate = useNavigate();
   let [formData, setFormData] = useState({});
   const handleChange = (e) => {
     const { name, value } = e.target;
